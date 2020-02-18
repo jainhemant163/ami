@@ -35,3 +35,11 @@ jobs:
             -var "aws_region=${AWS_REGION}" \
             -var "subnet_id=${AWS_SUBNET_ID}" \
             build.json
+workflows:
+  version: 2                        
+  build-deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
