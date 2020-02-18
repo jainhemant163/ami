@@ -5,7 +5,8 @@
         "aws_region": "us-east-1",
         "subnet_id": "",
         "source_ami": "ami-07ebfd5b3428b6f4d",
-        "ssh_username": "ubuntu"
+        "ssh_username": "ubuntu",
+        "variables": { "ami_users": "524398358661" }
     },
     "builders": [
         {
@@ -19,6 +20,7 @@
             "ssh_username": "{{user `ssh_username`}}",
             "ami_name": "csye6225_hemant_dev_{{timestamp}}",
             "ami_description": "Ubuntu AMI for CSYE 6225 - Spring 2020",
+            "ami_users": "{{ user `ami_users` }}",
             "launch_block_device_mappings": [
                 {
                     "device_name": "/dev/sda1",
