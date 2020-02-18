@@ -2,11 +2,11 @@
 AMI Repository for Organization
 
 
-#Validate Template
+# Validate Template
 
 ./packer validate  build.json
 
-#Build AMI
+# Build AMI
 
 ./packer build \
     -var 'aws_access_key=REDACTED' \
