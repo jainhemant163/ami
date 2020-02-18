@@ -1,7 +1,7 @@
-version: 2
+version: 2.1
+
 jobs:
   build:
-    working_directory: /home/hemant/CSYE6225-AMI/projects/packer
     docker:
       - image: circleci/python:2.7-jessie
       - image: circleci/openjdk:8u171-jdk
