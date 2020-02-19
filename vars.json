@@ -2,6 +2,7 @@
     "aws_region": "us-east-1",
     "aws_access_key": "AKIARTEYNJWJOTJKRPVI",
     "aws_secret_key": "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",
+    "ami_users": "524398358661",
     "subnet_id": "",
     "source_ami": "ami-07ebfd5b3428b6f4d"
 }
