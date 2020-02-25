@@ -1,5 +1,5 @@
 # ami
-AMI Repository for Organization
+AMI Repository for Organization 
 
 
 # Validate Template
