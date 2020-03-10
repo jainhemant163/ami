@@ -38,7 +38,14 @@
             ],
             "inline": [
                 "sudo apt-get update -y",
-                "sudo apt-get install tomcat8 tomcat8-docs tomcat8-examples tomcat8-admin apache2 -y"
+                "sudo apt-get install tomcat8 tomcat8-docs tomcat8-examples tomcat8-admin apache2 -y",
+                "sudo apt-get update -y",
+                "sudo apt-get install ruby -y",
+                "sudo apt-get install wget -y",
+                "cd /home/ubuntu",
+                "sudo wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install ",
+                "sudo chmod +x ./install",
+                "sudo ./install auto"
 
             ]
         }
